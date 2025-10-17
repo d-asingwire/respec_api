@@ -31,7 +31,6 @@ respec_api/
 │   ├── views/
 │   │   ├── model_training.py
 │   │   └── model_prediction.py
-│   ├── urls.py
 │   └── ...
 ├── respec_api/
 │   ├── settings.py
