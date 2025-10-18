@@ -45,7 +45,7 @@ respec_api/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/d-asingwire/house-price-api.git
+git clone https://github.com/d-asingwire/respec_api.git
 cd respec_api
 ```
 
