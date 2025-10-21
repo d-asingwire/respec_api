@@ -17,11 +17,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from api.views import TrainModel, PredictPrice
+from api.views import TrainModel, PredictPrice, RESpeckModelTrain
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('api/model/train/', TrainModel.as_view(), name='Train Model'),
-    path('api/model/predict/', PredictPrice.as_view(), name='Predict Model'),
+    path('api/iot/model/train/', RESpeckModelTrain.as_view(), name='IoT Model Training'),
+    path('api/housing/model/train/', TrainModel.as_view(), name='Train Model'),
+    path('api/housing/model/predict/', PredictPrice.as_view(), name='Predict Model'),
 ]
